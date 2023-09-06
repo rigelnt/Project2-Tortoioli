@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+ body {
+    font-family: 'roboto';
+ }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-gray {
+    color: $dark-gray;
+}
+
+.bkg-light-gray {
+    background-color: $light-gray;
+}
+
+.text-title {
+    font-size: 200%;
+}
+
+.text-large {
+    font-size: 160%;
+    text-align: center;
+}
+
+.text {
+    font-size: 130%;
+}
+
+.max-width {
+    max-width: 350px;
+}
