@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 15px 0;
+    box-shadow: 0 8px 6px -6px #acacac;
+    position: relative;
+}
+
+.navbar-logo {
+    max-width: 180px;
+}
+
+.back-icon {
+    visibility: hidden;
+    color: black;
+    font-size: 165%;
+}
