@@ -78,7 +78,13 @@ body {
 .bottom-spacing {
   padding: 0 0 35px 0; }
 
-.how-work li {
+.info-list {
+  list-style: none;
+  counter-reset: number;
+  margin-top: -30px; }
+
+.info-list li {
+  counter-increment: number;
   background-color: #f7f7f7;
   max-width: 295px;
   padding: 25px 15px 25px 40px;
@@ -88,14 +94,22 @@ body {
   border-radius: 20px;
   box-shadow: 3px 6px 20px -6px silver; }
 
-.how-work li::marker {
-  background-color: aqua; }
+.info-list li:before {
+  content: counter(number);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80%;
+  margin-left: -52px;
+  margin-right: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: #9356dc;
+  border-radius: 50%; }
 
-.how-work i {
+.info-list i {
   font-size: 120%; }
 
-.how-work {
-  margin-top: -30px; }
-
-.how-work li:last-child {
-  background-color: rgba(147, 86, 220, 0.1); }
+.info-list .active {
+  background-color: #f2eafb; }
