@@ -1,0 +1,55 @@
+.info-list {
+    list-style: none;
+    counter-reset: number;
+    margin-top: -30px;
+}
+
+.info-list li {
+    counter-increment: number;
+    background-color: $light-gray;
+    max-width: 295px;
+    padding: 25px 15px 25px 40px;
+    margin-bottom: 30px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 6px 20px -6px rgb(192, 192, 192);
+}
+
+.info-list li:before {
+    content: counter(number);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 80%;
+    margin-left: -52px;
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: $color-primary;
+    border-radius: 50%;
+}
+
+.info-list i {
+    font-size: 120%;
+}
+
+.info-list .active {
+    background-color: lighten($color-primary, 35);
+}
+
+
+
+// ol li {
+//     counter-increment: muffins;
+// }
+
+// ol li:before {
+//     content: counter(muffins) ". ";
+// }
+
+// ol {
+//     list-style: none;
+//     counter-reset: muffins;
+// }
