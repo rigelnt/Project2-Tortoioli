@@ -5,12 +5,22 @@
     font-family: 'roboto';
  }
 
+ a {
+    text-decoration: none;
+ }
+
+ a:visited {
+    color: inherit;
+ }
+
 .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+// // // colors // // //
 
 .color-primary {
     color: $color-primary;
@@ -28,13 +38,22 @@
     background-color: $light-gray;
 }
 
+.bkg-light-black {
+    background-color: #353535;
+}
+
+.white {
+    color: white;
+}
+
+// // // text // // //
+
 .text-title {
     font-size: 180%;
 }
 
 .text-large {
     font-size: 145%;
-    text-align: center;
 }
 
 .text {
@@ -43,4 +62,8 @@
 
 .max-width {
     max-width: 350px;
+}
+
+.logo-font {
+    font-family: shrikhand;
 }
