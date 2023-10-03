@@ -7,9 +7,10 @@
 .info-list li {
     counter-increment: number;
     background-color: $light-gray;
-    max-width: 295px;
+    max-width: 100%;
     padding: 25px 15px 25px 40px;
     margin-bottom: 30px;
+    margin-right: 20px;
     font-size: large;
     font-weight: bold;
     border-radius: 20px;
