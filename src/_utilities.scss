@@ -10,14 +10,23 @@
  }
 
  a:visited {
-    color: inherit;
+    color: none;
  }
+
+// // // flex // // //
 
 .column {
     display: flex;
     flex-direction: column;
+}
+
+.align-center {
     justify-content: center;
     align-items: center;
+}
+
+.small-gap {
+    gap: 10px;
 }
 
 // // // colors // // //
@@ -57,13 +66,27 @@
 }
 
 .text {
-    font-size: 130%;
+    font-size: 125%;
 }
+
+.s-icon {
+    font-size: 85%;
+}
+
+.xs-icon {
+    font-size: 70%;
+}
+
+.logo-font {
+    font-family: shrikhand;
+}
+
+
 
 .max-width {
     max-width: 350px;
 }
 
-.logo-font {
-    font-family: shrikhand;
+.small-width {
+    width: 25px;
 }
