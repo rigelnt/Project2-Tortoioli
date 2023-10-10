@@ -9,15 +9,25 @@
     text-decoration: none;
  }
 
+ a {
+    color: inherit;
+ }
+
  a:visited {
     color: none;
  }
+
 
 // // // flex // // //
 
 .column {
     display: flex;
     flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .align-center {
@@ -55,7 +65,7 @@
     color: white;
 }
 
-// // // text // // //
+// // // text  // // //
 
 .text-title {
     font-size: 180%;
@@ -67,6 +77,16 @@
 
 .text {
     font-size: 125%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// // // icon  // // //
+
+.xl-icon {
+    font-size: 250%;
 }
 
 .s-icon {
@@ -83,10 +103,19 @@
 
 
 
+// // // width // // //
+
 .max-width {
     max-width: 350px;
 }
 
 .small-width {
     width: 25px;
+}
+
+// // // border // // //
+
+.round-border {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }

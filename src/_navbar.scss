@@ -1,10 +1,10 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 25px 0 15px 0;
-    box-shadow: 0 8px 6px -6px #acacac;
     position: relative;
+}
+
+.navbar-shadow {
+    box-shadow: 0 8px 6px -6px #acacac;
 }
 
 .navbar-logo {
@@ -12,7 +12,10 @@
 }
 
 .back-icon {
-    visibility: hidden;
-    color: black;
+    text-align: center;
+    width: 40px;
+    margin: 0 66px 0 12px;
+    color: lighten(black, 25%);
     font-size: 165%;
 }
+

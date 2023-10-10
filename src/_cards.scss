@@ -25,8 +25,6 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 
 .card-text {
@@ -41,7 +39,7 @@
     position: absolute;
     background-color: #99e2d0;
     color: #139273;
-    right: 20px;
+    right: 15px;
     border-radius: 2px;
     margin: 12px;
     padding: 7px 30px;
@@ -55,8 +53,18 @@
     left: 130px;
   }
 
-.fav-icon:active {
-    color: $color-secondary;
+.solid-icon {
+    position: absolute;
+    opacity: 0;
+    background: $color-secondary;
+    background: linear-gradient(355deg, $color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+.solid-icon:hover {
+    opacity: 1;
+    transition: opacity 100ms;
+}
 
