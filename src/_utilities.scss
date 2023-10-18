@@ -1,6 +1,8 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
+
  body {
     font-family: 'roboto';
  }
@@ -35,9 +37,15 @@
     align-items: center;
 }
 
+.align-center-right {
+    align-items: end;
+    justify-content: center;
+}
+
 .small-gap {
     gap: 10px;
 }
+
 
 // // // colors // // //
 
@@ -51,6 +59,14 @@
 
 .light-gray {
     color: $light-gray;
+}
+
+.light-black {
+    color: $light-black;
+}
+
+.graphite {
+    color: $graphite;
 }
 
 .bkg-light-gray {
@@ -83,6 +99,8 @@
     text-align: center;
 }
 
+
+
 // // // icon  // // //
 
 .xl-icon {
@@ -97,6 +115,11 @@
     font-size: 70%;
 }
 
+
+
+// // // font // // //
+
+
 .logo-font {
     font-family: shrikhand;
 }
@@ -104,6 +127,10 @@
 
 
 // // // width // // //
+
+.full-width {
+    width: 100%;
+}
 
 .max-width {
     max-width: 350px;
@@ -113,9 +140,21 @@
     width: 25px;
 }
 
+
 // // // border // // //
 
 .round-border {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+
+// // // position // // //
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
