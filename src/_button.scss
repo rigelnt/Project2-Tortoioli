@@ -9,3 +9,8 @@
     text-align: center;
     text-decoration: none;
 }
+
+.button:hover {
+    box-shadow: 0 6px 25px -8px black;
+    transition: 200ms;
+}
