@@ -6,9 +6,7 @@ body {
   font-family: 'roboto'; }
 
 a {
-  text-decoration: none; }
-
-a {
+  text-decoration: none;
   color: inherit; }
 
 a:visited {
@@ -100,6 +98,11 @@ a:visited {
 .absolute {
   position: absolute; }
 
+@media (min-width: 770px) {
+  .container {
+    max-width: 1400px;
+    margin: auto; } }
+
 .button {
   min-width: 230px;
   box-shadow: 0 6px 15px -8px black;
@@ -110,6 +113,10 @@ a:visited {
   border-radius: 30px;
   text-align: center;
   text-decoration: none; }
+
+.button:hover {
+  box-shadow: 0 6px 25px -8px black;
+  transition: 200ms; }
 
 .navbar {
   padding: 25px 0 15px 0;
@@ -191,7 +198,8 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  max-width: 1080px; }
 
 .card-group .card {
   min-width: 350px;
@@ -219,7 +227,8 @@ a:visited {
 .restaurant-img {
   object-fit: cover;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  max-height: 300px; }
 
 .card-text {
   padding: 18px; }
@@ -240,12 +249,15 @@ a:visited {
   position: relative;
   z-index: 1;
   background-color: transparent;
-  border-style: hidden;
-  left: 130px; }
+  border-style: hidden; }
+
+.card-icon {
+  left: 135px; }
 
 .solid-icon {
   position: absolute;
   opacity: 0;
+  transition: opacity 300ms;
   background: #FF79DA;
   background: linear-gradient(355deg, #FF79DA, #9356dc);
   background-clip: text;
@@ -253,8 +265,24 @@ a:visited {
   color: transparent; }
 
 .solid-icon:hover {
-  opacity: 1;
-  transition: opacity 100ms; }
+  opacity: 1; }
+
+@media (min-width: 770px) {
+  .card {
+    height: 300px; }
+  .card-group {
+    gap: 40px;
+    justify-content: center; }
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px; }
+    .restaurants h2 {
+      font-size: xx-large; } }
 
 .menu {
   width: 100%;
@@ -263,8 +291,13 @@ a:visited {
   margin-top: -60px; }
 
 .menu-title {
-  width: 50%;
   justify-content: center; }
+
+.flex-title {
+  flex-basis: 340px; }
+
+.title-icon {
+  padding-top: 10px; }
 
 .line {
   content: '';
@@ -324,7 +357,7 @@ a:visited {
 
 .menu--fade {
   animation-name: menu-fade;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0; }
@@ -341,7 +374,7 @@ a:visited {
 @keyframes menu-fade {
   0% {
     opacity: 0;
-    transform: translate(0, 200px); }
+    transform: translate(0, 100px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -361,7 +394,7 @@ a:visited {
   animation-delay: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  z-index: 1; }
+  z-index: 10; }
 
 @keyframes loader-fade {
   0% {
