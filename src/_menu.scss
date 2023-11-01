@@ -6,9 +6,16 @@
 }
 
 .menu-title {
-    width: 50%;
     justify-content: center;
 }
+
+.flex-title {
+    flex-basis: 340px;
+}
+
+.title-icon {
+    padding-top: 10px;
+ }
 
 .line {
     content: '';
@@ -76,4 +83,37 @@
         transform: rotate(360deg);
         transition: 0.7s;
     }
+}
+
+
+
+// // //  FADE & LOAD  // // //
+
+.menu--fade {
+	animation-name: menu-fade;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.menu--fade-1 {
+	animation-delay: 0.1s;
+}
+.menu--fade-2 {
+	animation-delay: 0.2s;
+}
+.menu--fade-3 {
+	animation-delay: 0.3s;
+}
+
+@keyframes menu-fade {
+  0% {
+    opacity: 0;
+		transform: translate(0, 100px);
+  }
+  100% {
+    opacity: 1;
+		transform: translate(0);
+  }
 }

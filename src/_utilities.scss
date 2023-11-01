@@ -9,16 +9,12 @@
 
  a {
     text-decoration: none;
- }
-
- a {
     color: inherit;
  }
 
  a:visited {
     color: none;
  }
-
 
 // // // flex // // //
 
@@ -157,4 +153,35 @@
 
 .absolute {
     position: absolute;
+}
+
+
+// // // desktop // // //
+
+
+@media (min-width: 770px) {
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .desktop-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        section {
+            width: 50%;
+        }
+    }
+
+    .info {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .footer-gap {
+        gap: 200px;
+    }
+
 }

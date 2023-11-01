@@ -17,3 +17,10 @@
 .spacing-top {
     padding-top: 25px;
 }
+
+
+@media (min-width: 770px) {
+    .desktop-bottom-spc {
+        padding-bottom: 65px;
+    }
+}

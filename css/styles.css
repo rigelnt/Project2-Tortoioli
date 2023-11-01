@@ -101,7 +101,18 @@ a:visited {
 @media (min-width: 770px) {
   .container {
     max-width: 1400px;
-    margin: auto; } }
+    margin: auto; }
+  .desktop-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .desktop-row section {
+      width: 50%; }
+  .info {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; }
+  .footer-gap {
+    gap: 200px; } }
 
 .button {
   min-width: 230px;
@@ -156,6 +167,10 @@ a:visited {
 
 .spacing-top {
   padding-top: 25px; }
+
+@media (min-width: 770px) {
+  .desktop-bottom-spc {
+    padding-bottom: 65px; } }
 
 .info-list {
   list-style: none;
