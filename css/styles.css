@@ -111,8 +111,7 @@ a:visited {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px; }
   .footer-gap {
-    gap: 200px;
-    justify-content: center; }
+    justify-content: space-between; }
   .desktop-img {
     max-height: 450px !important; } }
 
@@ -251,7 +250,7 @@ a:visited {
   padding: 18px; }
 
 .card-text .column {
-  width: 50%; }
+  width: 100%; }
 
 .card-tag {
   position: absolute;
@@ -267,9 +266,6 @@ a:visited {
   z-index: 1;
   background-color: transparent;
   border-style: hidden; }
-
-.card-icon {
-  left: 135px; }
 
 .solid-icon {
   position: absolute;
