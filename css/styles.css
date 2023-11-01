@@ -104,15 +104,17 @@ a:visited {
     margin: auto; }
   .desktop-row {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
+    flex-direction: row; }
     .desktop-row section {
       width: 50%; }
   .info {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px; }
   .footer-gap {
-    gap: 200px; } }
+    gap: 200px;
+    justify-content: center; }
+  .desktop-img {
+    max-height: 450px !important; } }
 
 .button {
   min-width: 230px;
@@ -131,7 +133,7 @@ a:visited {
 
 .navbar {
   padding: 25px 0 15px 0;
-  position: relative; }
+  width: 100%; }
 
 .navbar-shadow {
   box-shadow: 0 8px 6px -6px #acacac; }
@@ -393,6 +395,15 @@ a:visited {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@media (min-width: 770px) {
+  .menu-dishes {
+    width: 33.3%; }
+  .menu-gap {
+    gap: 20px; }
+  .menu-title {
+    padding: 10px 50px;
+    flex-basis: 1250px; } }
 
 .loader {
   background-color: #f7f7f7;

@@ -168,8 +168,6 @@
     .desktop-row {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-
         section {
             width: 50%;
         }
@@ -182,6 +180,12 @@
 
     .footer-gap {
         gap: 200px;
+        justify-content: center;
     }
+
+    .desktop-img {
+        max-height: 450px !important;
+    }
+    
 
 }

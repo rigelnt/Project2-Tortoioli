@@ -117,3 +117,21 @@
 		transform: translate(0);
   }
 }
+
+
+// // // desktop // // //
+
+@media (min-width: 770px) {
+    .menu-dishes {
+        width: 33.3%;
+    }
+
+    .menu-gap {
+        gap: 20px;
+    }
+
+    .menu-title {
+        padding: 10px 50px;
+        flex-basis: 1250px;
+    }
+}
