@@ -13,4 +13,5 @@
 .button:hover {
     box-shadow: 0 6px 25px -8px black;
     transition: 200ms;
+    background: linear-gradient(355deg, lighten($color-primary, 2%), lighten($color-secondary, 2%))
 }
