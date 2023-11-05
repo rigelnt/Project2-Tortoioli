@@ -9,9 +9,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-a:visited {
-  color: none; }
-
 .column {
   display: flex;
   flex-direction: column; }
